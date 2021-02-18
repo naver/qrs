@@ -1,0 +1,10 @@
+# qrs
+# Copyright (c) 2022-present NAVER Corp.
+# Creative Commons Attribution-NonCommercial-ShareAlike 4.0 license
+
+sampler:
+  class: "RWMHResetSampler"
+  args:
+    reset_every: 10
+    q_local:
+        class: "LocalProposal"

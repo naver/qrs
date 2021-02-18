@@ -1,0 +1,21 @@
+# qrs 
+# Copyright (c) 2022-present NAVER Corp. 
+# Creative Commons Attribution-NonCommercial-ShareAlike 4.0 license
+
+base:
+  class: lm.HFAutoregressiveLM
+  args:
+    model_name: mkhalifa/gpt2-biographies
+filters:
+- class: ExponentialScorer
+  args:
+    features:
+    - class: GenderFeature
+      args:
+      - female
+    - class: MultiWordFeature
+      args:
+      - resources/wikibio-wordlists/science.txt
+    coefficients:
+    - 2.4463682174682617
+    - 10.182679176330566

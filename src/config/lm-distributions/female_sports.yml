@@ -1,0 +1,21 @@
+# qrs
+# Copyright (c) 2022-present NAVER Corp.
+# Creative Commons Attribution-NonCommercial-ShareAlike 4.0 license
+
+base:
+  class: lm.HFAutoregressiveLM
+  args:
+    model_name: mkhalifa/gpt2-biographies
+filters:
+- class: ExponentialScorer
+  args:
+    features:
+    - class: GenderFeature
+      args:
+      - female
+    - class: MultiWordFeature
+      args:
+      - resources/wikibio-wordlists/sports.txt
+    coefficients:
+    - 3.1032121181488037
+    - 10.41254997253418

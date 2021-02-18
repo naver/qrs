@@ -1,0 +1,14 @@
+# qrs
+# Copyright (c) 2022-present NAVER Corp.
+# Creative Commons Attribution-NonCommercial-ShareAlike 4.0 license
+
+sampler:
+  class: "IMHSampler"
+  args:
+    burn_in: 6000
+    keep_every: 60
+proposal:
+  class: "lm.GDCAutoregressiveLM"
+  args:
+    model_name: "gpt2"
+    checkpoint_fn: "<proposals-dir>/amazing.pt"

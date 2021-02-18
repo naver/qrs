@@ -1,0 +1,9 @@
+# qrs
+# Copyright (c) 2022-present NAVER Corp.
+# Creative Commons Attribution-NonCommercial-ShareAlike 4.0 license
+
+sampler:
+  args:
+    beta: 0.017989633604884148
+    truncate: true
+  class: RejectionSampler

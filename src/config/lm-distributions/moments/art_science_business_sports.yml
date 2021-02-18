@@ -1,0 +1,25 @@
+# qrs
+# Copyright (c) 2022-present NAVER Corp.
+# Creative Commons Attribution-NonCommercial-ShareAlike 4.0 license
+
+base:
+  class: "lm.HFAutoregressiveLM"
+  args:
+    model_name: "mkhalifa/gpt2-biographies" 
+moments:
+  - feature:
+      class: "MultiWordFeature"
+      args: ["resources/wikibio-wordlists/art.txt"]
+    moment: 0.40
+  - feature:
+      class: "MultiWordFeature"
+      args: ["resources/wikibio-wordlists/business.txt"]
+    moment: 0.10
+  - feature:
+      class: "MultiWordFeature"
+      args: ["resources/wikibio-wordlists/science.txt"]
+    moment: 0.40
+  - feature:
+      class: "MultiWordFeature"
+      args: ["resources/wikibio-wordlists/sports.txt"]
+    moment: 0.10

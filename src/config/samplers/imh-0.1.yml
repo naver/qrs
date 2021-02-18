@@ -1,0 +1,9 @@
+# qrs
+# Copyright (c) 2022-present NAVER Corp.
+# Creative Commons Attribution-NonCommercial-ShareAlike 4.0 license
+
+sampler:
+  class: "IMHSampler"
+  args:
+    burn_in: 1000
+    keep_every: 10

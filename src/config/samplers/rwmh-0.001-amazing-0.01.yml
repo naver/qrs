@@ -1,0 +1,14 @@
+# qrs
+# Copyright (c) 2022-present NAVER Corp.
+# Creative Commons Attribution-NonCommercial-ShareAlike 4.0 license
+
+sampler:
+  class: "RWMHSampler"
+  args:
+    keep_every: 1000
+    burn_in: 1000
+    q_local:
+        class: "LocalProposal"
+        args:
+            mix_with_delta: "amazing"
+            gamma: 0.01

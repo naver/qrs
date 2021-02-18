@@ -1,0 +1,11 @@
+# qrs
+# Copyright (c) 2022-present NAVER Corp.
+# Creative Commons Attribution-NonCommercial-ShareAlike 4.0 license
+
+sampler:
+  class: "DirectSampler"
+proposal:
+  class: "lm.HFAutoregressiveLM"
+  args:
+    model_name: "gpt2"
+    prompt: "Here is what I know about Wikileaks:"

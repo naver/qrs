@@ -1,0 +1,13 @@
+# qrs
+# Copyright (c) 2022-present NAVER Corp.
+# Creative Commons Attribution-NonCommercial-ShareAlike 4.0 license
+
+sampler:
+  class: "QuasiRejectionSampler"
+  args:
+    min_acceptance_rate: 0.01
+proposal:
+  class: "lm.GDCAutoregressiveLM"
+  args:
+    model_name: "gpt2"
+    checkpoint_fn: "<proposals-dir>/female_science.pt"

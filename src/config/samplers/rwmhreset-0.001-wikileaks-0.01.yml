@@ -1,0 +1,13 @@
+# qrs
+# Copyright (c) 2022-present NAVER Corp.
+# Creative Commons Attribution-NonCommercial-ShareAlike 4.0 license
+
+sampler:
+  class: "RWMHResetSampler"
+  args:
+    reset_every: 1000
+    q_local:
+        class: "LocalProposal"
+        args:
+            mix_with_delta: "Wikileaks"
+            gamma: 0.01

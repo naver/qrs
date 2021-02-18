@@ -1,0 +1,13 @@
+# qrs
+# Copyright (c) 2022-present NAVER Corp.
+# Creative Commons Attribution-NonCommercial-ShareAlike 4.0 license
+
+base:
+  class: "lm.HFAutoregressiveLM"
+  args:
+    model_name: "mkhalifa/gpt2-biographies"
+moments:
+  - feature: 
+      class: "GenderFeature"
+      args: ["female"]
+    moment: 0.5
